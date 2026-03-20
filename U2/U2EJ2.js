@@ -25,6 +25,12 @@
 */
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+async function fetchOctocat() {
+  const url = 'https://api.github.com/users/octocat';
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+}
 
 /**
  * TEST
